@@ -13,7 +13,6 @@
 		AAA24EDF184BE48E0038D59F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAA24EDD184BE48E0038D59F /* InfoPlist.strings */; };
 		AAA24EE1184BE48E0038D59F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA24EE0184BE48E0038D59F /* main.m */; };
 		AAA24EE5184BE48E0038D59F /* QuizAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA24EE4184BE48E0038D59F /* QuizAppDelegate.m */; };
-		AAA24EE8184BE48E0038D59F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA24EE6184BE48E0038D59F /* Main.storyboard */; };
 		AAA24EEB184BE48E0038D59F /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA24EEA184BE48E0038D59F /* QuizViewController.m */; };
 		AAA24EED184BE48E0038D59F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA24EEC184BE48E0038D59F /* Images.xcassets */; };
 		AAA24EF4184BE48E0038D59F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA24EF3184BE48E0038D59F /* XCTest.framework */; };
@@ -21,6 +20,7 @@
 		AAA24EF6184BE48E0038D59F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA24ED8184BE48E0038D59F /* UIKit.framework */; };
 		AAA24EFE184BE48E0038D59F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAA24EFC184BE48E0038D59F /* InfoPlist.strings */; };
 		AAA24F00184BE48E0038D59F /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA24EFF184BE48E0038D59F /* QuizTests.m */; };
+		AAA24F50184BFBC70038D59F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA24F4E184BFBC70038D59F /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		AAA24EE2184BE48E0038D59F /* Quiz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quiz-Prefix.pch"; sourceTree = "<group>"; };
 		AAA24EE3184BE48E0038D59F /* QuizAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizAppDelegate.h; sourceTree = "<group>"; };
 		AAA24EE4184BE48E0038D59F /* QuizAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizAppDelegate.m; sourceTree = "<group>"; };
-		AAA24EE7184BE48E0038D59F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAA24EE9184BE48E0038D59F /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		AAA24EEA184BE48E0038D59F /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
 		AAA24EEC184BE48E0038D59F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		AAA24EFB184BE48E0038D59F /* QuizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuizTests-Info.plist"; sourceTree = "<group>"; };
 		AAA24EFD184BE48E0038D59F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AAA24EFF184BE48E0038D59F /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
+		AAA24F4F184BFBC70038D59F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +112,9 @@
 		AAA24EDA184BE48E0038D59F /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				AAA24F4E184BFBC70038D59F /* Main.storyboard */,
 				AAA24EE3184BE48E0038D59F /* QuizAppDelegate.h */,
 				AAA24EE4184BE48E0038D59F /* QuizAppDelegate.m */,
-				AAA24EE6184BE48E0038D59F /* Main.storyboard */,
 				AAA24EE9184BE48E0038D59F /* QuizViewController.h */,
 				AAA24EEA184BE48E0038D59F /* QuizViewController.m */,
 				AAA24EEC184BE48E0038D59F /* Images.xcassets */,
@@ -229,9 +229,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA24F50184BFBC70038D59F /* Main.storyboard in Resources */,
 				AAA24EED184BE48E0038D59F /* Images.xcassets in Resources */,
 				AAA24EDF184BE48E0038D59F /* InfoPlist.strings in Resources */,
-				AAA24EE8184BE48E0038D59F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,20 +283,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		AAA24EE6184BE48E0038D59F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAA24EE7184BE48E0038D59F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AAA24EFC184BE48E0038D59F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AAA24EFD184BE48E0038D59F /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AAA24F4E184BFBC70038D59F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAA24F4F184BFBC70038D59F /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
